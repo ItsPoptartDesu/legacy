@@ -13,6 +13,12 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Header Files\unit_tests">
+      <UniqueIdentifier>{cc5f1382-89b4-482f-8a3a-45002821ff5c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\unit_tests">
+      <UniqueIdentifier>{6a2d0c43-f67e-4e8b-893c-cfab680fb31a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
@@ -27,14 +33,14 @@
     <ClInclude Include="IData.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="L_Tester.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="L_YourNode.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="L_Data.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="L_Tester.h">
+      <Filter>Header Files\unit_tests</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -53,14 +59,14 @@
     <ClCompile Include="IData.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="L_Tester.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="L_YourNode.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="L_Data.cpp">
       <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="L_Tester.cpp">
+      <Filter>Source Files\unit_tests</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

@@ -3,6 +3,7 @@
 #include <unordered_map>
 
 class L_Block;
+class L_Data;
 
 class L_BlockChain
 {
@@ -14,7 +15,7 @@ private:
 
 public:
 
-	void AddBlock(std::string _data);
+	void AddBlock(L_Data* _data);
 	void Print();
 
 	L_BlockChain();

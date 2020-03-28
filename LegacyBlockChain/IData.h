@@ -5,22 +5,24 @@
 class IData
 {
 private:
-	std::string senderKey;
-	std::string recieverKey;
-	time_t timestamp;
+	size_t mySenderKey;
+	size_t myRecieverKey;
+	time_t myCreationTimeStamp;
 
 protected:
-	//mutators
-	inline void SetSenderKey(std::string _key) { senderKey = _key; }
-	inline void SetRecieverKey(std::string _key) { recieverKey = _key; }
-	inline void SetTimeStamp(time_t _time) { timestamp = _time; }
-
+	
 public:
 	virtual	~IData();
+	virtual size_t GenerateDataHash() = 0;
 	
 	//accessors 
-	const inline std::string GetSenderKey() const { return senderKey; }
-	const inline std::string GetRecieverKey() const { return recieverKey; }
-	const inline time_t GetTimeStamp() const { return timestamp; }
+	inline size_t GetSenderKey() const { return mySenderKey; }
+	inline size_t GetRecieverKey() const { return myRecieverKey; }
+	inline time_t GetTimeStamp() const { return myCreationTimeStamp; }
+
+	//mutators
+	inline void SetSenderKey(size_t _key) { mySenderKey = _key; }
+	inline void SetRecieverKey(size_t _key) { myRecieverKey = _key; }
+	inline void SetTimeStamp(time_t _time) { myCreationTimeStamp = _time; }
 };
 
